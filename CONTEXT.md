@@ -26,8 +26,9 @@ leave placeholders (e.g. datasource env vars) so it's easy to plug in.
 ## 2. Stack
 
 - Java 17
-- Spring Boot 3.5.x (Maven)
-- Spring Web, Spring Data JPA
+- Spring Boot 4.1.x (Maven) — modularized starters (`spring-boot-starter-webmvc`,
+  `spring-boot-starter-kafka`, etc.), each with a matching `-test` starter
+- Spring Web MVC, Spring Data JPA
 - MySQL (own database, not shared with any other service)
 - Spring Kafka (async event bus — this is the primary integration
   mechanism with other services)
