@@ -1,0 +1,13 @@
+{
+  "name": "mercado-scaffold-boceto",
+  "private": true,
+  "description": "Draft BE/FE monorepo scaffold — not the final architecture. The real frontend scaffold will come from the project's common frontend Product Owner.",
+  "scripts": {
+    "dev:be": "cd BE && mvnw.cmd spring-boot:run",
+    "dev:fe": "npm --prefix FE start",
+    "dev": "concurrently -n BE,FE -c blue,green \"npm run dev:be\" \"npm run dev:fe\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}

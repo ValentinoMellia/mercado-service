@@ -31,3 +31,6 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### Node (root orchestrator only — FE has its own .gitignore) ###
+/node_modules/
